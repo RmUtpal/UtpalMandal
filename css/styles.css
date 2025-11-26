@@ -134,7 +134,7 @@ header {
 
 .headshot img {
   width: 260px;
-  height: 260px;
+  height: 290px;
   border-radius: 18px;
   object-fit: cover;
   background: #ddd;
@@ -259,3 +259,4 @@ footer {
     font-size: 28px;
   }
 }
+
