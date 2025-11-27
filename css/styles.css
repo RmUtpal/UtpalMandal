@@ -27,11 +27,13 @@ body{
 /* ===========================
    HEADER
 =========================== */
+/* === FIXED HEADER — MATCHES VictoryWithAsh === */
+
 header{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:18px 0;
+  padding:10px 0;  /* reduced */
   position:relative;
   z-index:10;
 }
@@ -39,17 +41,36 @@ header{
 header.sticky{
   position:sticky;
   top:0;
-  backdrop-filter:blur(12px);
-  background:rgba(10,10,20,0.55);
-  border-bottom:1px solid rgba(255,255,255,0.05);
+  background:rgba(10,10,20,0.45);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid rgba(255,255,255,0.04);
+  padding:8px 0;  /* slimmer */
+}
+
+/* LOGO — MATCH EXACT SIZE */
+.logo img{
+  width:36px;     /* was 48 */
+  height:36px;
+  border-radius:8px;  /* smaller radius like VictoryWithAsh */
+}
+
+/* NAV — EXACT LOOK */
+.nav{
+  display:flex;
+  gap:14px;  /* smaller spacing */
 }
 
 .nav a{
-  color:#B8C2E4;
+  color:#C4CCE3;
+  font-size:14.5px;
   text-decoration:none;
   font-weight:500;
+  transition:0.2s;
 }
-.nav a:hover{color:#46E6FF}
+.nav a:hover{
+  color:#46E6FF;
+}
+
 
 /* ===========================
    BUTTONS
@@ -216,3 +237,4 @@ header.sticky{
   .hero{grid-template-columns:1fr}
   .headshot img{width:260px;height:260px}
 }
+
